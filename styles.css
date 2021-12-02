@@ -32,6 +32,7 @@ h1 {
 
 h2, h3 {
     font-family: 'Chango', cursive;
+    padding: 1em;
 }
 
 
@@ -39,7 +40,7 @@ h4 {
     font-weight: bolder;
 }
 
-h3, p { 
+h2, p { 
     text-align: center;
 }
 
@@ -70,6 +71,11 @@ a {
 }
 
 /******************** BANNER ********************/
+
+#galeria h2 {
+    text-align: start;
+    padding: 0;
+}
 
 .carousel-item :first-child {
     position: absolute;
