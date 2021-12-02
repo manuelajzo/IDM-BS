@@ -31,14 +31,14 @@ h1 {
 
 h2, h3 {
     font-family: 'Chango', cursive;
-    text-align: center;
 }
+
 
 h4 {
     font-weight: bolder;
 }
 
-p {
+h3, p { 
     text-align: center;
 }
 
@@ -104,7 +104,6 @@ p {
 
 .boton-modal {
     border-radius: 5px;
-    border: solid 1px #3f221a;
     float: right;
     margin-right: 20px;
 }
@@ -118,8 +117,8 @@ p {
 
 #sobrenos h3 {
     background:  no-repeat url(img/sobrenos.png);
-    border-bottom: 15em solid transparent;
-    background-position: 50% -30%;
+    border-bottom: 12em solid transparent;
+    background-position: 50% -60%;
     margin-top: 2em;
 }
 
@@ -199,6 +198,13 @@ p {
 .productos li {
     list-style: none;
     text-align: center;
+}
+
+/**************************************************************** FORM *******************************************************************/
+
+.btn {
+    background-color: #d8a586;
+    color: #f4f2f0;
 }
 
 .card {
