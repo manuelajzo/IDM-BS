@@ -13,6 +13,10 @@ body {
     margin: auto;
 }
 
+ul {
+    padding: 0 !important;
+}
+
 h1 {
     background-image: url(img/logo.png);
     font-size: 0;
@@ -102,33 +106,59 @@ p {
 
 /* PASTILLAS BENEFICIOS */
 
-#pastisbenef li {
+#pastisbenef {
+    position: relative;
+    top: 20px;
+    width: 100%;
+}
+
+#pastisbenef :first-child li {
     list-style: none;
-    text-align: center;
+    text-align: center;  
+    width: 100%;
+    background-color: #f4f2f0;
 }
 
 #nongmo {
     background: no-repeat url(img/nongmo.png);
-    border-top: 12em solid transparent;
-    background-position: 50% 150%;
+    border-top: 15em solid transparent;
+    background-position: 50% 152%;
+    position: relative;
+    top: 0;
+    right: 0;
 }
 
 #vegan {
     background: no-repeat url(img/vegan.png);
-    border-top: 12em solid transparent;
-    background-position: 50% 150%;
+    border-top: 15em solid transparent;
+    border-bottom: 2em solid transparent;
+    background-position: 50% 121%;
+    position: absolute;
+    top: 0;
+    display: none;
 }
 
 #tacc {
     background: no-repeat url(img/tacc.png);
-    border-top: 12em solid transparent;
-    background-position: 50% 150%;
+    border-top: 15em solid transparent;
+    border-bottom: 2em solid transparent;
+    background-position: 50% 121%;
+    position: absolute;
+    top: 0;
+    display: none;
 }
 
 #natural {
     background: no-repeat url(img/natural.png);
-    border-top: 12em solid transparent;
-    background-position: 50% 150%;
+    border-top: 15em solid transparent;
+    background-position: 50% 145%;
+    position: absolute;
+    top: 0;
+    display: none;
+}
+
+#pastisbenef li:target {
+    display: inline-block;
 }
 
 .dot {
@@ -137,6 +167,7 @@ p {
     background-color: #d8a586;
     border-radius: 50%;
     display: inline-block;
+    margin-bottom: 2em;
 }
 
 .dot a {
