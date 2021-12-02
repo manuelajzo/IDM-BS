@@ -13,3 +13,21 @@
 .solo-pc {
     display: none;
 }
+
+.solo-pc + a {
+    position: relative;
+    background-color: #d8a586;
+    color: white;
+    text-decoration: none;
+    padding: .5em;
+    line-height: .5em;
+    border-radius: 10px;
+    top: 25px;
+    left: 20px;
+}
+
+.carousel-item :first-child h2 {
+    position: relative;
+    top: 20px;
+    left: 20px; 
+}
