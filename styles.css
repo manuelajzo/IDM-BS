@@ -40,7 +40,7 @@ h3 {
     text-align: center;
 }
 
-h3, p { 
+h2, p { 
     text-align: center;
 }
 
@@ -76,6 +76,11 @@ a {
 }
 
 /******************** BANNER ********************/
+
+#galeria h2 {
+    text-align: start;
+    padding: 0;
+}
 
 .carousel-item :first-child {
     position: absolute;
