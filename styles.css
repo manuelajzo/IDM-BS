@@ -105,8 +105,10 @@ a {
 }
 
 .boton-modal {
+    position: relative;
+    right: 20px;
     border-radius: 5px;
-    float: right;
+    /* float: right; */
     margin-right: 20px;
 }
 
@@ -140,55 +142,46 @@ a {
     width: 80%;
     margin: auto;
     margin-top: 1em;
+    justify-content: center;
 }
 
+
 #pastisbenef :first-child li {
-    text-align: center;  
-    width: 100%;
     background-color: #f4f2f0;
+    border-top: 16em solid transparent;
+    width: 100%;
+    background-position: 50% 152%;  
 }
 
 #nongmo {
     background: no-repeat url(img/nongmo.png);
-    border-top: 16em solid transparent;
-    background-position: 50% 152%;
     position: relative;
-    top: 0;
-    right: 0;
 }
 
 #vegan {
     background: no-repeat url(img/vegan.png);
-    border-top: 16em solid transparent;
-    border-bottom: 2em solid transparent;
-    background-position: 50% 121%;
     position: absolute;
-    top: 0;
     display: none;
+    top: 0;
 }
 
 #tacc {
     background: no-repeat url(img/tacc.png);
-    border-top: 16em solid transparent;
-    border-bottom: 1em solid transparent;
-    background-position: 50% 145%;
     position: absolute;
-    top: 0;
     display: none;
+    top: 0;
 }
 
 #natural {
     background: no-repeat url(img/natural.png);
-    border-top: 16em solid transparent;
-    background-position: 50% 145%;
     position: absolute;
-    top: 0;
     display: none;
+    top: 0;
 }
 
 #pastisbenef li:target {
     display: inline-block;
-}
+} 
 
 /******************** PRODUCTOS ********************/
 .productos {
@@ -334,8 +327,24 @@ footer p {
     background-image: url(img/facebook-icon-mobile.jpg);
 }
 
+@media screen and (max-width: 358px) {
+    #pastisbenef :first-child li {
+        border-top: 12em solid transparent;
+        background-position: 50% 170%; 
+    }
+}
+
+@media screen and (min-width: 628px) and (max-width: 699px) {
+    #pastisbenef .dots {
+        margin-top: 3em;
+    }
+}
 
 @media screen and (min-width: 481px) {
+    img {
+        max-width: 100%;
+    }
+
     .solo-pc {
         display: inherit;
         margin-top: 2em;
@@ -391,7 +400,8 @@ footer p {
     .benef{
         position: relative;
         display: inline-block;
-        width: 50%;
+        width: 100%;
+        vertical-align: bottom;
     }
     .boton-modal {
         display: none;
@@ -400,9 +410,20 @@ footer p {
         display: none !important;
     }
 
-    /* #sobrenos h3 {
-        border-left: 8em solid transparent;
-        background-position: -36% -18%;
-        border-top: 1em solid transparent;
-    } */
+    .benef {
+        columns: 2;
+        -webkit-columns: 2;
+        -moz-columns: 2;
+    }
+
+    #nongmo, #vegan, #tacc, #natural {
+        width: 50%;
+        display: inline-block;
+        position: relative;
+    }
+
+    #pastisbenef :first-child li {
+        min-height: 320px;
+    }
+
 }
