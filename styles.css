@@ -78,3 +78,53 @@ p {
 #sobrenos p {
     text-align: center;
 }
+
+
+/* PASTILLAS BENEFICIOS */
+
+#pastisbenef li {
+    list-style: none;
+    text-align: center;
+}
+
+#nongmo {
+    background: no-repeat url(img/nongmo.png);
+    border-top: 12em solid transparent;
+    background-position: 50% 150%;
+}
+
+#vegan {
+    background: no-repeat url(img/vegan.png);
+    border-top: 12em solid transparent;
+    background-position: 50% 150%;
+}
+
+#tacc {
+    background: no-repeat url(img/tacc.png);
+    border-top: 12em solid transparent;
+    background-position: 50% 150%;
+}
+
+#natural {
+    background: no-repeat url(img/natural.png);
+    border-top: 12em solid transparent;
+    background-position: 50% 150%;
+}
+
+.dot {
+    height: 20px;
+    width: 20px;
+    background-color: #d8a586;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot a {
+    font-size: 1px;
+    color: transparent;
+}
+
+.dots {
+    list-style: none;
+    text-align: center;
+}
