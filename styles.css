@@ -358,7 +358,7 @@ footer p {
     }
 }
 
-@media screen and (min-width: 891px) {
+@media screen and (min-width: 768px) {
     body {
         max-width: 1024px;
     }
@@ -380,6 +380,15 @@ footer p {
     #modal-vid {
         display: none !important;
     }
+    #productos li{
+        display: inline-block;
+        position: relative;
+    }
+    #productos .card {
+        min-height: 570px;
+    }
+
+    
 
     /* #sobrenos h3 {
         border-left: 8em solid transparent;
