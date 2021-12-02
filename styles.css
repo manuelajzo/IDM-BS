@@ -44,6 +44,10 @@ h3, p {
     text-align: center;
 }
 
+img {
+    max-width: 100%;
+}
+
 .dot {
     height: 20px;
     width: 20px;
@@ -64,6 +68,11 @@ h3, p {
 
 a {
     text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #e8d0c3 !important;
+    color: #f3f2f0;
 }
 
 /******************** BANNER ********************/
@@ -102,14 +111,6 @@ a {
 
 #beneficios div {
     padding: 20px;
-}
-
-.boton-modal {
-    position: relative;
-    right: 20px;
-    border-radius: 5px;
-    /* float: right; */
-    margin-right: 20px;
 }
 
 #beneficios h2 {
@@ -322,11 +323,8 @@ footer p {
 }
 
 @media screen and (min-width: 481px) {
-    img {
-        max-width: 100%;
-    }
 
-    .solo-pc {
+    #galeria .solo-pc {
         display: inherit;
         margin-top: 2em;
         text-align: left;
@@ -373,27 +371,28 @@ footer p {
         max-width: 1024px;
     }
 
-    #beneficios img {
-        max-width: 100%;
+    #beneficios h2 {
+        text-align: center;
     }
+
     .dots {
         display: none;
     }
+
     .benef{
         position: relative;
         display: inline-block;
         width: 100%;
         vertical-align: bottom;
     }
-    .boton-modal {
-        display: none;
-    }
-    #modal-vid {
-        display: none !important;
-    }
+    
     #productos li{
         display: inline-block;
         position: relative;
+        transition: transform .2s;
+    }
+    #productos li:hover {
+        transform: scale(0.9);
     }
     #productos .card {
         min-height: 570px;
@@ -420,8 +419,17 @@ footer p {
 
     #pastisbenef :first-child li {
         min-height: 320px;
-    }
-    /* footer {
-        width: 100%;
-    } */
+    } 
 }
+
+@media screen and (min-width: 990px) {
+
+    .solo-pc {
+        display: block;
+    }
+    
+    .boton-modal, #modal-benef {
+        display: none;
+    }
+ }
+
