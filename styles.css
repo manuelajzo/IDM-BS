@@ -259,9 +259,9 @@ footer div ul:first-child li {
     vertical-align: top;
 }
 
-#mapa li {
+footer li {
     text-align: center;
-    margin: 1em;
+    margin: 1em 0;
 }
 
 /* footer {
@@ -309,6 +309,14 @@ footer p {
     font-size: 0;
     width: 40px;
     height: 40px;
+}
+
+.datos {
+    width: 100%;
+}
+
+.datos ul {
+    text-align: center;
 }
 
 #ig {
