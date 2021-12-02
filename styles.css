@@ -10,6 +10,7 @@
 body {
     color: #3f221a;
     background-color: #f4f2f0;
+    margin: auto;
 }
 
 h1 {
@@ -25,6 +26,7 @@ h1 {
 
 h2, h3 {
     font-family: 'Chango', cursive;
+    text-align: center;
 }
 
 .carousel-item :first-child {
@@ -58,4 +60,17 @@ h2, h3 {
 
 .carousel-item img {
     margin-top: 20px;
+}
+
+/* SOBRE NOS */
+
+#sobrenos h3{
+    background:  no-repeat url(img/sobrenos.png);
+    border-bottom: 15em solid transparent;
+    background-position: 50% -30%;
+    margin-top: 2em;
+}
+
+#sobrenos p {
+    text-align: center;
 }
