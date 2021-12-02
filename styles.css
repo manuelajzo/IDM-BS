@@ -33,6 +33,8 @@ p {
     text-align: center;
 }
 
+/**************************************************************** BANNER *******************************************************************/
+
 .carousel-item :first-child {
     position: absolute;
     width: 100%;
@@ -66,9 +68,27 @@ p {
     margin-top: 20px;
 }
 
-/* SOBRE NOS */
+/**************************************************************** BENEFICIOS *******************************************************************/
 
-#sobrenos h3{
+.beneficios div {
+    padding: 20px;
+}
+
+.boton-modal {
+    border-radius: 5px;
+    border: solid 1px #3f221a;
+    float: right;
+    margin-right: 20px;
+}
+
+.beneficios h2 {
+    padding: 1em;
+}
+
+/**************************************************************** SOBRE NOS *******************************************************************/
+
+
+#sobrenos h3 {
     background:  no-repeat url(img/sobrenos.png);
     border-bottom: 15em solid transparent;
     background-position: 50% -30%;
