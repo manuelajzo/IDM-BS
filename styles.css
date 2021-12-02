@@ -376,3 +376,23 @@ footer p {
         min-width: 100%;
     }
 }
+
+@media screen and (min-width: 890px) {
+    #beneficios img {
+        max-width: 100%;
+    }
+    .dots {
+        display: none;
+    }
+    .benef{
+        position: relative;
+        display: inline-block;
+        width: 50%;
+    }
+    .boton-modal {
+        display: none;
+    }
+    #modal-vid {
+        display: none !important;
+    }
+}
