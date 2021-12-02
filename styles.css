@@ -72,7 +72,7 @@ a {
 
 /******************** BANNER ********************/
 
-#galeria h2 {
+#galeria h2, #galeria p {
     text-align: start;
     padding: 0;
 }
@@ -92,7 +92,7 @@ a {
     padding: .5em;
     line-height: .5em;
     border-radius: 10px;
-    top: 40px;
+    top: 20px;
     left: 20px;
 }
 
@@ -121,11 +121,12 @@ a {
 /******************** SOBRE NOS ********************/
 
 
-#sobrenos h3 {
+#sobrenos h2 {
     background:  no-repeat url(img/sobrenos.png);
-    border-bottom: 12em solid transparent;
-    background-position: 50% -60%;
+    border-bottom: 10em solid transparent;
+    background-position: 50% -50%;
     margin-top: 2em;
+    padding: 0;
 }
 
 #sobrenos p {
@@ -262,38 +263,6 @@ footer p {
     margin-bottom: 0;
 }
 
-/* footer {
-    background-color: #3f221a;
-    color: #cbdee5;
-    width: 100%;
-    font-size: 0.8em;
-    padding: 2em;
-}
-
-footer ul {
-    margin: auto;
-    display: inline-block;
-    vertical-align: bottom;
-}
-
-footer div ul {
-    display: inline;
-}
-
-footer div ul:first-child li {
-    display: inline-block;
-    vertical-align: top;
-}
-
-footer a {
-    color: #cbdee5;
-}
-
-footer p {
-    font-size: 1em;
-    text-align: center;
-} */
-
 #mapa li:first-child a {
     background: url(img/logo2.png) no-repeat;
     display: inline-block;
@@ -331,7 +300,8 @@ footer p {
 
 @media screen and (max-width: 358px) {
     #pastisbenef :first-child li {
-        border-top: 12em solid transparent;
+        min-height: 200px;
+        border-top: 15em solid transparent;
         background-position: 50% 170%; 
     }
 }
@@ -339,6 +309,10 @@ footer p {
 @media screen and (min-width: 628px) and (max-width: 699px) {
     #pastisbenef .dots {
         margin-top: 3em;
+    }
+
+    #sobrenos h2 {
+        border-bottom: 9em solid transparent;
     }
 }
 
