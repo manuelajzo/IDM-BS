@@ -32,16 +32,16 @@
               <a class="nav-link" href="#sobrenos">Sobre nosotros</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Beneficios</a>
+              <a class="nav-link" href="beneficios">Beneficios</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Productos</a>
+              <a class="nav-link" href="productos">Productos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Recetas</a>
+              <a class="nav-link" href="recetas">Recetas</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contacto</a>
+              <a class="nav-link" href="contacto">Contacto</a>
             </li>
           </ul>
         </div>
@@ -56,7 +56,7 @@
           <div>
             <h2>La alternativa natural</h2>
             <p class="solo-pc">Reemplazá la leche de origen animal por una opción beneficiosa, saludable y riquisima</p>
-            <a href="#about">Saber más</a>
+            <a href="#sobrenos">Saber más</a>
           </div>
           <picture id="banner-1">
             <source media="(min-width: 890px)" srcset="">
@@ -68,7 +68,7 @@
           <div>
             <h2>Para todos los días</h2>
             <p class="solo-pc">Tenemos tres variantes perfectas para todos los días. Probalas en recetas o ¡solas!</p>
-            <a href="#about">Conocelas</a>
+            <a href="#productos">Conocelas</a>
           </div>
           <picture id="banner-2">
             <source media="(min-width: 890px)" srcset="">
@@ -101,8 +101,8 @@
   </section>
 
   <main>
-    <section class="beneficios">
-      <h2>Beneficios</h2>
+    <section class="beneficios" id="beneficios">
+      <h3>Beneficios</h3>
       <picture>
         <source media="(min-width: 890px)" srcset="">
         <source media="(min-width: 480px)" srcset="img/leche-almendras-beneficios-tablet.jpg">
@@ -195,7 +195,7 @@
   </section>
 
 
-  <section class="productos container">
+  <section class="productos container" id="productos">
     <h3>Nuestros productos</h3>
     <ul class="row">
       <li class="col-12" id="original">
@@ -274,7 +274,7 @@
     </ul>
   </section>
 
-  <aside>
+  <aside id="recetas">
     <h3>Recetas</h3>
     <p>Descubrí nuestro canal de recetas hechas con MALK</p>
     <figure class="ratio ratio-21x9">
@@ -282,31 +282,36 @@
     </figure>    
   </aside>
 
-  <aside>
-      <h3>Contactanos</h3>
-      <p>
-        Nos encanta recibir comentarios, sugerencias, opiniones o lo que tengas ganas de contarnos. 
-        ¡Escribinos!
-      </p>
-    <form>
-        <div class="mb-3">
-            <label for="nombre" class="form-label">Nombre:</label>
-          <input class="form-control" type="text" placeholder="Nombre" aria-label="default input example" id="nombre">
-        </div>
-        <div class="mb-3">
-              <label for="apellido" class="form-label">Apellido:</label>
-            <input class="form-control" type="text" placeholder="Apellido" aria-label="default input example" id="apellido">
-        </div>
-        <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Email:</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@mail.com">
-        </div>
-        <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Comentarios:</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-        </div>
-      <button type="submit" class="btn">Enviar</button>
-    </form>
+  <aside id="contacto">
+      <div class="card">
+          <div class="formtext">
+              <h3>Contactanos</h3>
+              <p>
+                Nos encanta recibir comentarios, sugerencias, opiniones o lo que tengas ganas de contarnos. 
+                ¡Escribinos!
+              </p>
+          </div>
+        <form>
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre:</label>
+              <input class="form-control" type="text" placeholder="Nombre" aria-label="default input example" id="nombre">
+            </div>
+            <div class="mb-3">
+                  <label for="apellido" class="form-label">Apellido:</label>
+                <input class="form-control" type="text" placeholder="Apellido" aria-label="default input example" id="apellido">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email:</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@mail.com">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Comentarios:</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+          <button type="submit" class="btn">Enviar</button>
+        </form>
+
+      </div>
   </aside>
 
   <footer>
