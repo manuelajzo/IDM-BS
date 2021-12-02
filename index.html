@@ -248,7 +248,7 @@
   <section class="productos container" id="productos">
     <h2>Nuestros productos</h2>
     <ul class="row">
-      <li class="col-12" id="original">
+      <li class="col-12 col-md-6 col-lg-6 col-xl-6" id="original">
         <div class="card">
           <picture>
             <source media="(min-width: 890px)" srcset="">
@@ -256,7 +256,7 @@
             <img class="card-img-top" src="img/bottle.png" alt="">
           </picture>
           <div class="card-body">
-            <h4>Malk original.</h4>
+            <h3>Malk original.</h3>
             <p class="card-text">Cremosa y deliciosa hecha 100% con almendras
               orgánicas. Perfecta para todos los días</p>
             <p>Ideal para cocinar como sustituto de la leche de vaca en tus recetas</p>
@@ -265,7 +265,7 @@
         </div>
       </li>
 
-      <li class="col-12" id="zero">
+      <li class="col-12 col-md-6 col-lg-6 col-xl-6" id="zero">
         <div class="card">
           <picture>
             <source media="(min-width: 890px)" srcset="">
@@ -273,8 +273,8 @@
             <img class="card-img-top" src="img/bottlealm2.png" alt="">
           </picture>
           <div class="card-body">
-            <h4>Malk sin azucares.</h4>
-            <p class="card-text">Tiene sólo 28 calorías por porción y al ser de origen vegetal no tiene lactosa ni
+            <h3>Malk sin azucares.</h3>
+            <p class="card-text">Tiene sólo 28 calorías por porción, no tiene lactosa ni
               colesterol. Ideal para quienes eligen alimentarse mejor y con muy bajas calorías.</p>
             <p>Ingredientes: almendras
               orgánicas, agua.</p>
@@ -282,7 +282,7 @@
         </div>
       </li>
 
-      <li class="col-12" id="avena">
+      <li class="col-12 col-md-6 col-lg-6 col-xl-6" id="avena">
         <div class="card">
           <picture>
             <source media="(min-width: 890px)" srcset="">
@@ -290,7 +290,7 @@
             <img class="card-img-top" src="img/bottleavena.png" alt="">
           </picture>
           <div class="card-body">
-            <h4>Malk Avena.</h4>
+            <h3>Malk Avena.</h3>
             <p class="card-text">Rica y saludable como la de almendras, pero además es fuente de fibra. No tiene azúcar
               y tiene sólo 48 calorías por porción. Ideal para quienes eligen alimentarse mejor y con más sabor.</p>
             <p>Ingredientes: avena
@@ -299,7 +299,7 @@
         </div>
       </li>
 
-      <li class="col-12" id="castania">
+      <li class="col-12 col-md-6 col-lg-6 col-xl-6" id="castania">
         <div class="card">
           <picture>
             <source media="(min-width: 890px)" srcset="">
@@ -307,7 +307,7 @@
             <img class="card-img-top" src="img/bottlecastanias.png" alt="">
           </picture>
           <div class="card-body">
-            <h4>Malk castañas.</h4>
+            <h3>Malk castañas.</h3>
             <p class="card-text">La bebida vegetal de castañas es rica en carbohidratos, fósforo, calcio, magnesio,
               potasio y vitaminas del grupo B.</p>
             <p>Ingredientes: Agua, castañas de Cajú orgánicas, sal, carbonato de calcio</p>
@@ -341,7 +341,7 @@
                 ¡Escribinos!
               </p>
           </div>
-        <form>
+        <form action="enviar_formulario.php" method="post" enctype="multipart/form-data">
             <div class="mb-3">
                 <label for="nombre" class="form-label">Nombre:</label>
               <input class="form-control" type="text" placeholder="Nombre" aria-label="default input example" id="nombre">
@@ -351,12 +351,12 @@
                 <input class="form-control" type="text" placeholder="Apellido" aria-label="default input example" id="apellido">
             </div>
             <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Email:</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@mail.com">
+                <label for="mail" class="form-label">Email:</label>
+                <input type="email" class="form-control" id="mail" placeholder="nombre@mail.com">
             </div>
             <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Comentarios:</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <label for="comentarios" class="form-label">Comentarios:</label>
+                <textarea class="form-control" id="comentarios" rows="3"></textarea>
             </div>
           <button type="submit" class="btn">Enviar</button>
         </form>
