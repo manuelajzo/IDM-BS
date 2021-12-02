@@ -16,6 +16,7 @@ body {
 
 ul {
     padding: 0;
+    list-style: none;
 }
 
 h1 {
@@ -57,8 +58,11 @@ h3, p {
 }
 
 .dots {
-    list-style: none;
     text-align: center;
+}
+
+a {
+    text-decoration: none;
 }
 
 /******************** BANNER ********************/
@@ -76,7 +80,6 @@ h3, p {
     position: relative;
     background-color: #d8a586;
     color: white;
-    text-decoration: none;
     padding: .5em;
     line-height: .5em;
     border-radius: 10px;
@@ -141,7 +144,6 @@ h3, p {
 }
 
 #pastisbenef :first-child li {
-    list-style: none;
     text-align: center;  
     width: 100%;
     background-color: #f4f2f0;
@@ -196,7 +198,6 @@ h3, p {
 }
 
 .productos li {
-    list-style: none;
     text-align: center;
 }
 
@@ -231,21 +232,36 @@ h3, p {
 
 
 /******************** FOOTER ********************/
-
-
 footer {
-    background-color: #2B2D42;
-    color: #FF5714;
-    font-size: 0.5em;
-    padding: 2em;
+    background-color: #3f221a;
+    width: 100%;
+    color: #cbdee5;
 }
 
-footer li {
+footer a {
+    color: #cbdee5;
+}
+
+footer div ul:first-child li {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#mapa li {
+    text-align: center;
     margin: 1em;
 }
 
+/* footer {
+    background-color: #3f221a;
+    color: #cbdee5;
+    width: 100%;
+    font-size: 0.8em;
+    padding: 2em;
+}
+
 footer ul {
-    width: 33%;
+    margin: auto;
     display: inline-block;
     vertical-align: bottom;
 }
@@ -260,44 +276,38 @@ footer div ul:first-child li {
 }
 
 footer a {
-    color: #FF5714;
-}   
-
-#mapa li:first-child a {
-    background: url(img/logo.png) no-repeat;
-    display: inline-block;
-    font-size: 0;
-    width: 100px;
-    height: 60px;
-}
-
-footer div {
-    display: inline-block;
-    position: absolute;
-    margin: 3em;
-    width: 55%;
-}
-
-.redes a {
-    display: inline-block;
-    font-size: 0;
-    width: 30px;
-    height: 30px;
-}
-
-#ig {
-    background-image: url(./recursos/instagram-icon.png);
-}
-
-#tw {
-    background-image: url(./recursos/twitter-icon.png);
-}
-
-#fb {
-    background-image: url(./recursos/facebook-icon.png);
+    color: #cbdee5;
 }
 
 footer p {
     font-size: 1em;
     text-align: center;
+} */
+
+#mapa li:first-child a {
+    background: url(img/logo2.png) no-repeat;
+    display: inline-block;
+    font-size: 0;
+    width: 200px;
+    height: 100px;
 }
+
+.redes a {
+    display: inline-block;
+    font-size: 0;
+    width: 40px;
+    height: 40px;
+}
+
+#ig {
+    background-image: url(img/instagram-icon-mobile.jpg);
+}
+
+#tw {
+    background-image: url(img/twitter-icon-mobile.jpg);
+}
+
+#fb {
+    background-image: url(img/facebook-icon-mobile.jpg);
+}
+
