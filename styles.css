@@ -16,6 +16,7 @@ body {
 
 ul {
     padding: 0;
+    list-style: none;
 }
 
 h1 {
@@ -57,8 +58,11 @@ h3, p {
 }
 
 .dots {
-    list-style: none;
     text-align: center;
+}
+
+a {
+    text-decoration: none;
 }
 
 /******************** BANNER ********************/
@@ -76,7 +80,6 @@ h3, p {
     position: relative;
     background-color: #d8a586;
     color: white;
-    text-decoration: none;
     padding: .5em;
     line-height: .5em;
     border-radius: 10px;
@@ -98,7 +101,7 @@ h3, p {
 
 /******************** BENEFICIOS ********************/
 
-.beneficios div {
+#beneficios div {
     padding: 20px;
 }
 
@@ -108,7 +111,7 @@ h3, p {
     margin-right: 20px;
 }
 
-.beneficios h2 {
+#beneficios h2 {
     padding: 1em;
 }
 
@@ -141,7 +144,6 @@ h3, p {
 }
 
 #pastisbenef :first-child li {
-    list-style: none;
     text-align: center;  
     width: 100%;
     background-color: #f4f2f0;
@@ -196,7 +198,6 @@ h3, p {
 }
 
 .productos li {
-    list-style: none;
     text-align: center;
 }
 
@@ -241,4 +242,92 @@ form {
     margin-top: 1em;
 }
 
+
+/******************** FOOTER ********************/
+footer {
+    background-color: #3f221a;
+    width: 100%;
+    color: #cbdee5;
+}
+
+footer a {
+    color: #cbdee5;
+}
+
+footer div ul:first-child li {
+    display: inline-block;
+    vertical-align: top;
+}
+
+footer li {
+    text-align: center;
+    margin: 1em 0;
+}
+
+/* footer {
+    background-color: #3f221a;
+    color: #cbdee5;
+    width: 100%;
+    font-size: 0.8em;
+    padding: 2em;
+}
+
+footer ul {
+    margin: auto;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+footer div ul {
+    display: inline;
+}
+
+footer div ul:first-child li {
+    display: inline-block;
+    vertical-align: top;
+}
+
+footer a {
+    color: #cbdee5;
+}
+
+footer p {
+    font-size: 1em;
+    text-align: center;
+} */
+
+#mapa li:first-child a {
+    background: url(img/logo2.png) no-repeat;
+    display: inline-block;
+    font-size: 0;
+    width: 200px;
+    height: 100px;
+}
+
+.redes a {
+    display: inline-block;
+    font-size: 0;
+    width: 40px;
+    height: 40px;
+}
+
+.datos {
+    width: 100%;
+}
+
+.datos ul {
+    text-align: center;
+}
+
+#ig {
+    background-image: url(img/instagram-icon-mobile.jpg);
+}
+
+#tw {
+    background-image: url(img/twitter-icon-mobile.jpg);
+}
+
+#fb {
+    background-image: url(img/facebook-icon-mobile.jpg);
+}
 
