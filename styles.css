@@ -105,8 +105,10 @@ a {
 }
 
 .boton-modal {
+    position: relative;
+    right: 20px;
     border-radius: 5px;
-    float: right;
+    /* float: right; */
     margin-right: 20px;
 }
 
@@ -140,6 +142,7 @@ a {
     width: 80%;
     margin: auto;
     margin-top: 1em;
+    justify-content: center;
 }
 
 #pastisbenef :first-child li {
@@ -148,6 +151,7 @@ a {
     background-color: #f4f2f0;
 }
 
+/* 
 #nongmo {
     background: no-repeat url(img/nongmo.png);
     border-top: 16em solid transparent;
@@ -188,7 +192,7 @@ a {
 
 #pastisbenef li:target {
     display: inline-block;
-}
+} */
 
 /******************** PRODUCTOS ********************/
 .productos {
@@ -336,6 +340,10 @@ footer p {
 
 
 @media screen and (min-width: 481px) {
+    img {
+        max-width: 100%;
+    }
+
     .solo-pc {
         display: inherit;
         margin-top: 2em;
@@ -391,13 +399,26 @@ footer p {
     .benef{
         position: relative;
         display: inline-block;
-        width: 50%;
+        width: 100%;
+        vertical-align: bottom;
     }
     .boton-modal {
         display: none;
     }
     #modal-vid {
         display: none !important;
+    }
+
+    .benef {
+        columns: 2;
+        -webkit-columns: 2;
+        -moz-columns: 2;
+    }
+
+    #nongmo, #vegan, #tacc, #natural {
+        width: 50%;
+        display: inline-block;
+        position: relative;
     }
 
     /* #sobrenos h3 {
