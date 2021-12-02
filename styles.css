@@ -67,3 +67,10 @@ h2, h3 {
 .beneficios div {
     padding: 20px;
 }
+
+.boton-modal {
+    border-radius: 5px;
+    border: solid 1px #3f221a;
+    float: right;
+    margin-right: 20px;
+}
