@@ -421,6 +421,9 @@ footer p {
         min-height: 320px;
     }
 
+    footer{
+        columns: 2;
+    }
     
 }
 @media screen and (min-width: 990px) {
