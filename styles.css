@@ -335,7 +335,7 @@ footer p {
 }
 
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 481px) {
     .solo-pc {
         display: inherit;
         margin-top: 2em;
@@ -377,7 +377,7 @@ footer p {
     }
 }
 
-@media screen and (min-width: 890px) {
+@media screen and (min-width: 891px) {
     #beneficios img {
         max-width: 100%;
     }
