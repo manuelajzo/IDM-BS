@@ -200,8 +200,16 @@ a {
     position: relative;
 }
 
+#productos h2 {
+    padding: 1em;
+}
+
 .productos li {
     text-align: center;
+}
+
+#productos .row {
+    min-height: 600px;
 }
 
 .card {
