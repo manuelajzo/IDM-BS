@@ -224,4 +224,74 @@ p {
 }
 
 
-/******************** PRODUCTOS ********************/
+/******************** FOOTER ********************/
+
+
+footer {
+    background-color: #2B2D42;
+    color: #FF5714;
+    font-size: 0.5em;
+    padding: 2em;
+}
+
+footer li {
+    margin: 1em;
+}
+
+footer ul {
+    width: 33%;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+footer div ul {
+    display: inline;
+}
+
+footer div ul:first-child li {
+    display: inline-block;
+    vertical-align: top;
+}
+
+footer a {
+    color: #FF5714;
+}   
+
+#mapa li:first-child a {
+    background: url(img/logo.png) no-repeat;
+    display: inline-block;
+    font-size: 0;
+    width: 100px;
+    height: 60px;
+}
+
+footer div {
+    display: inline-block;
+    position: absolute;
+    margin: 3em;
+    width: 55%;
+}
+
+.redes a {
+    display: inline-block;
+    font-size: 0;
+    width: 30px;
+    height: 30px;
+}
+
+#ig {
+    background-image: url(./recursos/instagram-icon.png);
+}
+
+#tw {
+    background-image: url(./recursos/twitter-icon.png);
+}
+
+#fb {
+    background-image: url(./recursos/facebook-icon.png);
+}
+
+footer p {
+    font-size: 1em;
+    text-align: center;
+}
