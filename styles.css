@@ -1,5 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Chango&family=Comfortaa:wght@300;400;500;600;700&display=swap');
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-size: 1em;
+}
+
+.carousel-item :first-child {
+    position: absolute;
+    width: 100%;
+}
+
+.solo-pc {
+    display: none;
+}
+
+.solo-pc + a {
+    position: relative;
+    background-color: #d8a586;
+    color: white;
+    text-decoration: none;
+    padding: .5em;
+    line-height: .5em;
+    border-radius: 10px;
+    top: 40px;
+    left: 20px;
+}
+
+.carousel-item :first-child h2 {
+    position: relative;
+    color : #3f221a;
+    font-family: 'Chango', cursive;
+    top: 20px;
+    left: 20px; 
+}
+
+.carousel-item img {
+    margin-top: 20px;
 }
