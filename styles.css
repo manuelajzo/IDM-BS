@@ -101,7 +101,7 @@ a {
 
 /******************** BENEFICIOS ********************/
 
-.beneficios div {
+#beneficios div {
     padding: 20px;
 }
 
@@ -111,7 +111,7 @@ a {
     margin-right: 20px;
 }
 
-.beneficios h2 {
+#beneficios h2 {
     padding: 1em;
 }
 
@@ -201,13 +201,6 @@ a {
     text-align: center;
 }
 
-/**************************************************************** FORM *******************************************************************/
-
-.btn {
-    background-color: #d8a586;
-    color: #f4f2f0;
-}
-
 .card {
     top: 0;
     margin: 20px;
@@ -228,6 +221,25 @@ a {
 
 .productos ul li:target {
     display: inline-block !important;
+}
+
+/**************************************************************** FORM *******************************************************************/
+
+.btn {
+    background-color: #d8a586;
+    color: #f4f2f0;
+}
+
+form {
+    margin: 2em;
+}
+
+.formtext {
+    margin-top: 2em;
+}
+
+.formtext p{
+    margin-top: 1em;
 }
 
 
