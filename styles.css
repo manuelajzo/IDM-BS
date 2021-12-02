@@ -69,7 +69,6 @@ a {
 
 .carousel-item :first-child {
     position: absolute;
-    width: 100%;
 }
 
 .solo-pc {
@@ -151,7 +150,7 @@ a {
 
 #nongmo {
     background: no-repeat url(img/nongmo.png);
-    border-top: 15em solid transparent;
+    border-top: 16em solid transparent;
     background-position: 50% 152%;
     position: relative;
     top: 0;
@@ -160,7 +159,7 @@ a {
 
 #vegan {
     background: no-repeat url(img/vegan.png);
-    border-top: 15em solid transparent;
+    border-top: 16em solid transparent;
     border-bottom: 2em solid transparent;
     background-position: 50% 121%;
     position: absolute;
@@ -170,7 +169,7 @@ a {
 
 #tacc {
     background: no-repeat url(img/tacc.png);
-    border-top: 15em solid transparent;
+    border-top: 16em solid transparent;
     border-bottom: 1em solid transparent;
     background-position: 50% 145%;
     position: absolute;
@@ -180,7 +179,7 @@ a {
 
 #natural {
     background: no-repeat url(img/natural.png);
-    border-top: 15em solid transparent;
+    border-top: 16em solid transparent;
     background-position: 50% 145%;
     position: absolute;
     top: 0;
@@ -264,6 +263,10 @@ footer li {
     margin: 1em 0;
 }
 
+footer p {
+    margin-bottom: 0;
+}
+
 /* footer {
     background-color: #3f221a;
     color: #cbdee5;
@@ -331,3 +334,45 @@ footer p {
     background-image: url(img/facebook-icon-mobile.jpg);
 }
 
+
+@media screen and (min-width: 480px) {
+    .solo-pc {
+        display: inherit;
+        margin-top: 2em;
+        margin-left: 1.2em;
+    }
+    #sobrenos {
+        width: 80%;
+        margin: auto;
+    }
+    #sobrenos h3 {
+        border-bottom: 10em solid transparent;
+    }
+    #beneficios h3 {
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+    #vegan {
+        border-top: 14em solid transparent;
+    }
+    #recetas h3, p {
+        margin-bottom: 1em;
+    }
+    figure {
+        margin-top: 2em;
+    }
+    #contacto {
+        margin-top: 2em;
+    }
+    .formtext {
+        width: 80%;
+        margin: 2em auto;
+    }
+    form {
+        width: 80%;
+        margin: 2em auto;
+    }
+    footer {
+        min-width: 100%;
+    }
+}
