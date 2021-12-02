@@ -30,13 +30,14 @@ h1 {
     color: #d8a586 !important;
 }
 
-h2, h3 {
+h2 {
     font-family: 'Chango', cursive;
+    text-align: center;
 }
 
-
-h4 {
+h3 {
     font-weight: bolder;
+    text-align: center;
 }
 
 h3, p { 
@@ -82,16 +83,15 @@ a {
     padding: .5em;
     line-height: .5em;
     border-radius: 10px;
-    top: 40px;
-    left: 20px;
+    margin-left: 0.25em;
 }
 
 .carousel-item :first-child h2 {
     position: relative;
     color : #3f221a;
     font-family: 'Chango', cursive;
-    top: 20px;
-    left: 20px; 
+    text-align: left;
+    margin-left: 0.25em;
 }
 
 .carousel-item img {
@@ -117,7 +117,7 @@ a {
 /******************** SOBRE NOS ********************/
 
 
-#sobrenos h3 {
+#sobrenos h2 {
     background:  no-repeat url(img/sobrenos.png);
     border-bottom: 12em solid transparent;
     background-position: 50% -60%;
@@ -260,44 +260,12 @@ footer div ul:first-child li {
 
 footer li {
     text-align: center;
-    margin: 1em 0;
+    margin: 0.5em 0;
 }
 
 footer p {
     margin-bottom: 0;
 }
-
-/* footer {
-    background-color: #3f221a;
-    color: #cbdee5;
-    width: 100%;
-    font-size: 0.8em;
-    padding: 2em;
-}
-
-footer ul {
-    margin: auto;
-    display: inline-block;
-    vertical-align: bottom;
-}
-
-footer div ul {
-    display: inline;
-}
-
-footer div ul:first-child li {
-    display: inline-block;
-    vertical-align: top;
-}
-
-footer a {
-    color: #cbdee5;
-}
-
-footer p {
-    font-size: 1em;
-    text-align: center;
-} */
 
 #mapa li:first-child a {
     background: url(img/logo2.png) no-repeat;
@@ -305,6 +273,10 @@ footer p {
     font-size: 0;
     width: 200px;
     height: 100px;
+}
+
+#mapa {
+    margin-bottom: 0;
 }
 
 .redes a {
@@ -334,28 +306,37 @@ footer p {
     background-image: url(img/facebook-icon-mobile.jpg);
 }
 
+@media screen and (min-width: 320px) and (max-width: 380px){
+    #beneficios div {
+        padding: 10px;
+    }
+    #natural {
+        border-top: 17em solid transparent;
+    }
+}
 
 @media screen and (min-width: 481px) {
     .solo-pc {
         display: inherit;
         margin-top: 2em;
-        margin-left: 1.2em;
+        text-align: left;
+        margin-left: 0.25em;
     }
     #sobrenos {
         width: 80%;
         margin: auto;
     }
-    #sobrenos h3 {
+    #sobrenos h2 {
         border-bottom: 10em solid transparent;
     }
-    #beneficios h3 {
+    #beneficios h2 {
         margin-top: 2em;
         margin-bottom: 2em;
     }
     #vegan {
         border-top: 14em solid transparent;
     }
-    #recetas h3, p {
+    #recetas h2, p {
         margin-bottom: 1em;
     }
     figure {
