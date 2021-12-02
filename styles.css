@@ -335,7 +335,7 @@ footer p {
 }
 
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 481px) {
     .solo-pc {
         display: inherit;
         margin-top: 2em;
@@ -377,7 +377,11 @@ footer p {
     }
 }
 
-@media screen and (min-width: 890px) {
+@media screen and (min-width: 891px) {
+    body {
+        max-width: 1024px;
+    }
+
     #beneficios img {
         max-width: 100%;
     }
@@ -395,4 +399,10 @@ footer p {
     #modal-vid {
         display: none !important;
     }
+
+    /* #sobrenos h3 {
+        border-left: 8em solid transparent;
+        background-position: -36% -18%;
+        border-top: 1em solid transparent;
+    } */
 }
