@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Chango&family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -33,11 +34,34 @@ h2, h3 {
     text-align: center;
 }
 
+h4 {
+    font-weight: bolder;
+}
+
 p {
     text-align: center;
 }
 
-/**************************************************************** BANNER *******************************************************************/
+.dot {
+    height: 20px;
+    width: 20px;
+    background-color: #d8a586;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 2em;
+}
+
+.dot a {
+    font-size: 1px;
+    color: transparent;
+}
+
+.dots {
+    list-style: none;
+    text-align: center;
+}
+
+/******************** BANNER ********************/
 
 .carousel-item :first-child {
     position: absolute;
@@ -72,7 +96,7 @@ p {
     margin-top: 20px;
 }
 
-/**************************************************************** BENEFICIOS *******************************************************************/
+/******************** BENEFICIOS ********************/
 
 .beneficios div {
     padding: 20px;
@@ -89,7 +113,7 @@ p {
     padding: 1em;
 }
 
-/**************************************************************** SOBRE NOS *******************************************************************/
+/******************** SOBRE NOS ********************/
 
 
 #sobrenos h3 {
@@ -103,23 +127,7 @@ p {
     text-align: center;
 }
 
-/**************************************************************** PRODUCTOS *******************************************************************/
-.productos {
-    font-size: .9em;
-}
-
-.productos li {
-    list-style: none;
-    text-align: center;
-}
-
-.card {
-    margin: 20px;
-    background-color: #cbdee5;
-    border-radius: 1em;
-}
-
-/* PASTILLAS BENEFICIOS */
+/******************** PASTILLAS BENEFICIO ********************/
 
 #pastisbenef {
     position: relative;
@@ -182,21 +190,38 @@ p {
     display: inline-block;
 }
 
-.dot {
-    height: 20px;
-    width: 20px;
-    background-color: #d8a586;
-    border-radius: 50%;
-    display: inline-block;
-    margin-bottom: 2em;
+/******************** PRODUCTOS ********************/
+.productos {
+    font-size: .9em;
+    position: relative;
 }
 
-.dot a {
-    font-size: 1px;
-    color: transparent;
-}
-
-.dots {
+.productos li {
     list-style: none;
     text-align: center;
 }
+
+.card {
+    top: 0;
+    margin: 20px;
+    border-radius: 1em;
+    border: 0;
+    background-color: #cbdee5;
+}
+
+#original {
+    position: relative;
+}
+
+#zero, #avena, #castania {
+    position: absolute;
+    display: none;
+    top: 30;
+}
+
+.productos ul li:target {
+    display: inline-block !important;
+}
+
+
+/******************** PRODUCTOS ********************/
