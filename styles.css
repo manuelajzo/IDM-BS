@@ -13,6 +13,10 @@ body {
     margin: auto;
 }
 
+ul {
+    padding: 0;
+}
+
 h1 {
     background-image: url(img/logo.png);
     font-size: 0;
@@ -97,4 +101,20 @@ p {
 
 #sobrenos p {
     text-align: center;
+}
+
+/**************************************************************** PRODUCTOS *******************************************************************/
+.productos {
+    font-size: .9em;
+}
+
+.productos li {
+    list-style: none;
+    text-align: center;
+}
+
+.card {
+    margin: 20px;
+    background-color: #cbdee5;
+    border-radius: 1em;
 }
